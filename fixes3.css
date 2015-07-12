@@ -1,0 +1,16 @@
+
+* {
+	background-color: red !important;
+}
+
+html /deep/ * {
+	background-color: red !important;
+}
+
+* /deep/ * {
+	background-color: red !important;
+}
+
+html /deep/ .elements-disclosure li.parent::before {
+	background-color: red;
+}

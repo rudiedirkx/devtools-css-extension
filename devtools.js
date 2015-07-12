@@ -1,7 +1,9 @@
 var xhr = new XMLHttpRequest(),
-	stylesheet = 'fixes2.css';
+	stylesheet = 'fixes3.css';
 
-xhr.open("GET", "/" + stylesheet, false);
+xhr.open("GET", "/" + stylesheet, true);
+xhr.onload = function(e) {
+	chrome.devtools.panels.applyStyleSheet(this.responseText);
+	// console.log(this.responseText);
+};
 xhr.send();
-chrome.devtools.panels.applyStyleSheet(xhr.responseText);
-console.log(xhr.responseText);
