@@ -1,0 +1,12 @@
+{
+	"name": "DevTools CSS fixes",
+	"version": "1.0",
+	"description": "Devtools CSS fixes",
+	"devtools_page": "devtools.html",
+	"manifest_version": 2,
+	"icons": {
+		"16": "images/icon48.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	}
+}

@@ -1,0 +1,59 @@
+/* this one doesn't even show!? */
+body {
+	border: solid 10px red !important;
+}
+
+/* header tabs */
+html body .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
+html body .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header-tab:hover {
+	color: white !important;
+}
+
+/* selectors */
+html /deep/ .styles-section .simple-selector.selector-matches {
+	color: #000;
+	font-weight: bold;
+}
+
+/* expand/collapse arrows */
+html /deep/ .console-group-messages .section > .header .title,
+html /deep/ .properties-tree li {
+	line-height: 1.2;
+}
+
+html /deep/ .section > .header::before,
+html /deep/ .properties-tree li.parent::before {
+	display: inline-block;
+	height: 12px;
+	margin-top: calc((1.2em - 12px) / 2) !important;
+}
+
+/* expand/collapse arrows */
+html /deep/ .elements-disclosure li.parent::before {
+	height: 12px;
+	margin-top: calc((1.2em - 12px) / 2);
+}
+
+/* resources tab content table */
+html /deep/ .data-grid .header-container {
+	height: 1.6em;
+}
+html /deep/ .data-grid .data-container {
+	top: 1.6em;
+}
+html /deep/ .data-grid td {
+	height: 1.4em;
+	line-height: 1.4;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+html /deep/ .data-grid table.data {
+	background: none transparent;
+}
+html /deep/ .resources-main .data-grid table.data tr:not(.selected):nth-child(odd) {
+	background-color: #EAF3FF;
+}
+html /deep/ .data-grid td,
+html /deep/ .data-grid th {
+	line-height: 1.2;
+}

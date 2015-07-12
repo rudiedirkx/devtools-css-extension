@@ -1,0 +1,209 @@
+
+* {
+	-webkit-transition-duration: 0s !important;
+	transition-duration: 0s !important;
+}
+
+/* elements sidebar */
+html .styles-element-state-pane {
+	height: 4.2em;
+	margin-top: -4.2em;
+}
+html .styles-section .simple-selector.selector-matches {
+	font-weight: bold;
+	color: black;
+}
+html .styles-section .header .subtitle {
+	float: none;
+	text-align: right;
+}
+
+/* filters */
+html .console-status-bar,
+html .console-filters-header {
+	flex-basis: 1.6em;
+}
+
+/* tabs */
+html .tabbed-pane-header {
+	flex-basis: 1.6em;
+}
+html .tabbed-pane-header-tab {
+	line-height: 1.6;
+	height: 1.6em;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* very top toolbar */
+html .toolbar {
+	flex: 0 1 auto;
+}
+html .toolbar-controls-left,
+html .toolbar-controls-right {
+	padding-top: 5px;
+}
+html .toolbar .tabbed-pane-header-tab {
+	height: auto;
+	line-height: 1.6;
+	color: white;
+	width: auto !important;
+}
+html .toolbar .tabbed-pane-header-tab.selected {
+	font-weight: bold;
+}
+
+/* elements sidebar computed css */
+html .sidebar-pane.composite .metrics {
+	height: 17em;
+}
+html .properties-tree li {
+	line-height: 1.2;
+}
+html .sidebar-pane-filter-box {
+	flex-basis: 1.4em;
+}
+/* and dom events */
+html .event-listener-breakpoints.properties-tree li {
+	height: auto;
+	padding-top: 0;
+}
+html .event-listener-breakpoints .checkbox-elem {
+	float: none;
+	position: static;
+}
+
+/* resources tab left menu */
+html .resources.panel .sidebar li {
+	height: 1.4em;
+}
+html .resources.panel .sidebar li.selected .selection {
+	height: 1.4em;
+}
+html .resources.panel .sidebar .icon {
+    margin-top: calc((1.4em - 16px) / 2);
+}
+
+/* resources tab content table */
+html .data-grid .header-container {
+	height: 1.6em;
+}
+html .data-grid .data-container {
+	top: 1.6em;
+}
+html .data-grid td {
+	height: 1.4em;
+	line-height: 1.4;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+html .data-grid table.data {
+	background: none transparent;
+}
+html .resources-main .data-grid table.data tr:not(.selected):nth-child(odd) {
+	background-color: #EAF3FF;
+}
+html .data-grid td,
+html .data-grid th {
+	line-height: 1.2;
+}
+
+/* console */
+html .console-timestamp {
+	-webkit-user-select: none;
+}
+html .console-group-messages .outline-disclosure,
+html .console-group-messages .outline-disclosure ol {
+	line-height: 1.4;
+}
+html .bubble-repeat-count {
+	height: 1.4em;
+}
+html .outline-disclosure li.parent::before,
+html .section > .header::before,
+html .properties-tree li.parent::before,
+html .console-formatted-object .section > .header::before,
+html .event-bars .event-bar .header::before {
+	display: inline-block;
+	height: 12px;
+	margin-top: calc((1.4em - 12px) / 2);
+}
+html .section > .header .title,
+html .event-bar .header .title,
+html .console-group-messages .section > .header .title {
+	line-height: 1.4;
+}
+
+/* sources menu left */
+html .navigator li {
+	line-height: 1.4;
+	height: 1.4em;
+}
+html .outline-disclosure li .selection,
+html .navigator li.selected .selection {
+	height: 1.4em;
+}
+html .navigator .icon {
+    margin-top: calc((1.4em - 16px) / 2);
+}
+
+/* network view header */
+html .panel-status-bar,
+html .network-filters-header {
+	flex-basis: 1.6em;
+}
+html .toolbar-replace-control {
+	height: auto;
+	line-height: 1.4;
+}
+html .status-bar-item {
+	height: 1.6em;
+}
+
+/* network view */
+html .network-log-grid.data-grid td {
+	x-line-height: 1.4;
+	x-padding-top: 3px;
+	x-padding-bottom: 3px;
+}
+html .network-log-grid.data-grid .header-container {
+	height: 2.9em;
+}
+html .network-log-grid.data-grid.small .header-container {
+	height: 1.6em;
+}
+html .network-log-grid.data-grid .data-container {
+	top: 2.9em;
+}
+html .network-log-grid.data-grid.small .data-container {
+	top: 1.6em;
+}
+html .network-log-grid.data-grid .resources-dividers-label-bar {
+	height: 2.7em;
+}
+html .network-timeline-grid.small .resources-dividers-label-bar {
+	height: 1.4em;
+}
+html .network-timeline-grid .resources-divider-label {
+	top: -15px;
+}
+
+/* code */
+.CodeMirror pre {
+	line-height: 1.4 !important;
+}
+.cm-breakpoint .CodeMirror-linenumber {
+	height: 1.4em !important;
+	line-height: 1.4 !important;
+}
+
+/* elements crumbs */
+html #elements-crumbs {
+	flex-basis: 1.4em;
+}
+html #elements-crumbs,
+html .crumbs,
+html .crumbs .crumb {
+	line-height: 1.4em;
+	height: 1.4em;
+}
