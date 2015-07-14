@@ -1,8 +1,8 @@
 
 html /deep/ .elements-disclosure li.parent:before {
-	background-color: red;
+	background: none red !important;
 }
 
 html /deep/ .elements-disclosure li.parent::before {
-	background-color: red;
+	background: none red !important;
 }

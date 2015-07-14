@@ -1,8 +1,3 @@
-/* this one doesn't even show!? */
-body {
-	/*border: solid 10px red !important;*/
-}
-
 /* header tabs */
 html body .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
 html body .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header-tab:hover {
@@ -26,12 +21,14 @@ html /deep/ .properties-tree li.parent::before {
 	display: inline-block;
 	height: 12px;
 	margin-top: calc((1.2em - 12px) / 2) !important;
+	background-color: hsl(0, 100%, 40%);
 }
 
 /* expand/collapse arrows */
 html /deep/ .elements-disclosure li.parent::before {
 	height: 12px;
 	margin-top: calc((1.2em - 12px) / 2);
+	background-color: hsl(0, 100%, 40%);
 }
 
 /* resources tab content table */
