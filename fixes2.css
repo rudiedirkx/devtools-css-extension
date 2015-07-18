@@ -16,19 +16,33 @@ html /deep/ .properties-tree li {
 	line-height: 1.2;
 }
 
-html /deep/ .section > .header::before,
-html /deep/ .properties-tree li.parent::before {
+html /deep/ .section > .header::before, /* Console */
+html /deep/ .properties-tree li.parent::before, /* Console sub/properties */
+html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	display: inline-block;
 	height: 12px;
-	margin-top: calc((1.2em - 12px) / 2) !important;
-	background-color: hsl(0, 100%, 40%);
+	margin-top: calc((1.2em - 12px) / 2) !important; /* overriden in objectValue.css */
+}
+html /deep/ .elements-disclosure li.parent::before { /* Elements */
+	background-color: hsl(0, 100%, 40%); /* red */
 }
 
-/* expand/collapse arrows */
-html /deep/ .elements-disclosure li.parent::before {
+/* resources tab side panel */
+html /deep/ .resources.panel .sidebar li {
+	height: auto;
+	position: relative;
+}
+html /deep/ .resources.panel .sidebar li .selection {
+	height: auto !important;
+	top: 0;
+	bottom: 0;
+}
+html /deep/ .resources.panel .sidebar .icon {
+	margin-top: calc((1.2em - 16px) / 2);
+}
+html /deep/ .resources.panel .sidebar .outline-disclosure li::before {
 	height: 12px;
 	margin-top: calc((1.2em - 12px) / 2);
-	background-color: hsl(0, 100%, 40%);
 }
 
 /* resources tab content table */
