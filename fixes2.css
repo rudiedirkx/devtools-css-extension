@@ -12,12 +12,14 @@ html /deep/ .styles-section .simple-selector.selector-matches {
 
 /* expand/collapse arrows */
 html /deep/ .console-group-messages .section > .header .title,
-html /deep/ .properties-tree li {
+html /deep/ .properties-tree li,
+html /deep/ .object-properties-section li {
 	line-height: 1.2;
 }
 
 html /deep/ .section > .header::before, /* Console */
 html /deep/ .properties-tree li.parent::before, /* Console sub/properties */
+html /deep/ .tree-outline li::before, /* Console sub/properties */
 html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	display: inline-block;
 	height: 12px;
@@ -67,4 +69,10 @@ html /deep/ .resources-main .data-grid table.data tr:not(.selected):nth-child(od
 html /deep/ .data-grid td,
 html /deep/ .data-grid th {
 	line-height: 1.2;
+}
+
+/* sources */
+html /deep/ .cm-breakpoint .CodeMirror-linenumber {
+	height: calc(100% - 2px);
+	line-height: calc(1.2em - 2px) !important;
 }
