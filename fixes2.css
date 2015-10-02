@@ -1,9 +1,3 @@
-/* header tabs */
-html body .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header,
-html body .inspector-view-tabbed-pane.tabbed-pane::shadow .tabbed-pane-header-tab:hover {
-	color: white !important;
-}
-
 /* selectors */
 html /deep/ .styles-section .simple-selector.selector-matches {
 	color: #000;
