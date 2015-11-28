@@ -17,6 +17,10 @@ html /deep/ .webkit-html-external-link:hover,
 html /deep/ .webkit-html-resource-link:hover {
 	text-decoration: underline;
 }
+html /deep/ .tooltip {
+	line-height: 1.4;
+	white-space: pre-wrap;
+}
 
 /* script popup */
 html /deep/ .popover .content {
