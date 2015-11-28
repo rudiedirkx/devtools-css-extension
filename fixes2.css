@@ -1,7 +1,36 @@
+/* filter/search bar */
+html /deep/ .filter-text-filter,
+html /deep/ .filter-input-field {
+	height: auto;
+	padding: 0;
+}
+
+/* console */
+html /deep/ .object-value-string {
+	white-space: pre-wrap;
+}
+html /deep/ .webkit-html-external-link,
+html /deep/ .webkit-html-resource-link {
+	text-decoration: none;
+}
+html /deep/ .webkit-html-external-link:hover,
+html /deep/ .webkit-html-resource-link:hover {
+	text-decoration: underline;
+}
+
+/* script popup */
+html /deep/ .popover .content {
+	line-height: 1.4;
+}
+
 /* selectors */
 html /deep/ .styles-section .simple-selector.selector-matches {
 	color: #000;
 	font-weight: bold;
+}
+html /deep/ .styles-section .style-properties .implicit,
+html /deep/ .styles-section .style-properties .inherited {
+	opacity: 0.35;
 }
 
 /* expand/collapse arrows */
