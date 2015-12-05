@@ -21,6 +21,9 @@ html /deep/ .tooltip {
 	line-height: 1.4;
 	white-space: pre-wrap;
 }
+html /deep/ .object-properties-section li {
+	line-height: 1.1;
+}
 
 /* script popup */
 html /deep/ .popover .content {
