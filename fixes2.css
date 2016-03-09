@@ -15,6 +15,9 @@ html /deep/ .filter-input-field {
 }
 
 /* console */
+html /deep/ .tree-outline li {
+	align-items: flex-start;
+}
 html /deep/ .object-value-string {
 	white-space: pre-wrap;
 }
@@ -65,6 +68,7 @@ html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	display: inline-block;
 	height: 12px;
 	margin-top: calc((1.2em - 12px) / 2) !important; /* overriden in objectValue.css */
+	width: 14px;
 }
 html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	background-color: hsl(0, 100%, 40%); /* red */
