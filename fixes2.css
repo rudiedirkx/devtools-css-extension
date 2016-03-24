@@ -15,6 +15,9 @@ html /deep/ .filter-input-field {
 }
 
 /* console */
+html /deep/ .bubble-repeat-count {
+	height: 1.2em;
+}
 html /deep/ .tree-outline li {
 	align-items: flex-start;
 }
@@ -59,6 +62,14 @@ html /deep/ .object-properties-section li {
 	line-height: 1.2;
 }
 
+html /deep/ #search-results-pane-file-based li.parent,
+html /deep/ .event-listener-breakpoints li.parent,
+html /deep/ .section > .header,
+html /deep/ .properties-tree li.parent,
+html /deep/ .tree-outline li,
+html /deep/ .elements-disclosure li.parent {
+	padding-left: 20px;
+}
 html /deep/ #search-results-pane-file-based li.parent::before, /* SHIFT + F search results */
 html /deep/ .event-listener-breakpoints li.parent::before, /* Event Listener Breakpoints sidebar */
 html /deep/ .section > .header::before, /* Console */
@@ -69,6 +80,11 @@ html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	height: 12px;
 	margin-top: calc((1.2em - 12px) / 2) !important; /* overriden in objectValue.css */
 	width: 14px;
+
+	/* Broken alignment since Chrome 49/50+ */
+	position: absolute;
+	left: 6px;
+	top: 0;
 }
 html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	background-color: hsl(0, 100%, 40%); /* red */
