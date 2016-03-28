@@ -90,6 +90,7 @@ html /deep/ .elements-disclosure li.parent::before { /* Elements */
 	background-color: hsl(0, 100%, 40%); /* red */
 }
 
+
 /* resources tab side panel */
 html /deep/ .resources.panel .sidebar li {
 	height: auto;
@@ -103,9 +104,11 @@ html /deep/ .resources.panel .sidebar li .selection {
 html /deep/ .resources.panel .sidebar .icon {
 	margin-top: calc((1.2em - 16px) / 2);
 }
-html /deep/ .resources.panel .sidebar .outline-disclosure li::before {
+html /deep/ /*.resources.panel .sidebar*/ .outline-disclosure li::before {
 	height: 12px;
+	width: 16px;
 	margin-top: calc((1.2em - 12px) / 2);
+	display: inline-block;
 }
 
 /* resources tab content table */
