@@ -145,3 +145,7 @@ html /deep/ .cm-breakpoint .CodeMirror-linenumber {
 html /deep/ .event-listener-breakpoints li.parent {
 	clear: both;
 }
+html /deep/ .paused-status.error-reason .status-sub {
+	max-height: none;
+	line-height: 1.3;
+}

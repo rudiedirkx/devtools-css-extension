@@ -1,0 +1,10 @@
+html /deep/ .paused-status.error-reason .status-sub {
+	max-height: none;
+	line-height: 1.3;
+}
+
+.styles-section .simple-selector.selector-matches {
+	color: #000;
+	font-weight: bolder;
+	background: #eee;
+}
