@@ -1,9 +1,10 @@
 {
 	"name": "DevTools CSS fixes",
 	"version": "1.0",
+	"minimum_chrome_version": "100.0",
 	"description": "Devtools CSS fixes",
 	"devtools_page": "devtools.html",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"icons": {
 		"128": "images/icon128.png"
 	}
